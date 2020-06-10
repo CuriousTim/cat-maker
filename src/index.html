@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+  <link href="/css/app.css" rel="stylesheet" type="text/css">
+  <script src="/js/app.js" async></script>
+  <title>Cat Maker</title>
+</head>
+<body class="wrapper" style="background-color: #8CABBE">
+  <header class="grid">
+    <h1>The Official Cat Creator</h1>
+  </header>
+  <div class="stage">
+    <canvas id="cbg" height="600" width="800" style="z-index: 0"></canvas>
+    <canvas id="cear" height="600" width="800" style="z-index: 1"></canvas>
+    <canvas id="ctail" height="600" width="800" style="z-index: 2"></canvas>
+    <canvas id="cleg" height="600" width="800" style="z-index: 3"></canvas>
+    <canvas id="cbody" height="600" width="800" style="z-index: 4"></canvas>
+    <canvas id="cface" height="600" width="800" style="z-index: 5"></canvas>
+  </div>
+  <div class="controls grid">
+    <div class="left grid">
+      <button id="l-bg" class="left" disabled>
+        <span class="left-arrow">&#10148;</span>
+      </button>
+    </div>
+    <div class="trait grid">Background</div>
+    <div class="right grid">
+      <button id="r-bg">
+        <span>&#10148;</span>
+      </button>
+    </div>
+    <div class="left grid">
+      <button id="l-face" class="left" disabled>
+        <span class="left-arrow">&#10148;</span>
+      </button>
+    </div>
+    <div class="trait grid">Face</div>
+    <div class="right grid">
+      <button id="r-face">
+        <span>&#10148;</span>
+      </button>
+    </div>
+    <div class="left grid">
+      <button id="l-ear" class="left" disabled>
+        <span class="left-arrow">&#10148;</span>
+      </button>
+    </div>
+    <div class="trait grid">Ears</div>
+    <div class="right grid">
+      <button id="r-ear">
+        <span>&#10148;</span>
+      </button>
+    </div>
+    <div class="left grid">
+      <button id="l-body" class="left" disabled>
+        <span class="left-arrow">&#10148;</span>
+      </button></div>
+    <div class="trait grid">Body</div>
+    <div class="right grid">
+      <button id="r-body">
+        <span>&#10148;</span>
+      </button>
+    </div>
+    <div class="left grid">
+      <button id="l-leg" class="left" disabled>
+        <span class="left-arrow">&#10148;</span>
+      </button>
+    </div>
+    <div class="trait grid">Legs</div>
+    <div class="right grid">
+      <button id="r-leg">
+        <span>&#10148;</span>
+      </button>
+    </div>
+    <div class="left grid">
+      <button id="l-tail" class="left" disabled>
+        <span class="left-arrow">&#10148;</span>
+      </button>
+    </div>
+    <div class="trait grid">Tail</div>
+    <div class="right grid">
+      <button id="r-tail">
+        <span>&#10148;</span>
+      </button>
+    </div>
+    <div></div>
+    <div class="grid">
+      <a href="#" id="download" download="AwesomeCat.png">
+        <button id="download-btn">Download Cat</button>
+      </a>
+    </div>
+    <div></div>
+  </div>
+</body>
+</html>

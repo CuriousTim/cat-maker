@@ -1,0 +1,80 @@
+@font-face {
+  font-family: glacial;
+  src: url(/fonts/GlacialIndifference-Regular.otf);
+  font-display: swap;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 50px 800px 1fr 50px;
+  grid-template-rows: 100px 600px 50px;
+  grid-gap: 10px;
+}
+
+header {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.stage {
+  grid-column: 2;
+  grid-row: 2;
+  position: relative;
+}
+
+.controls {
+  grid-column: 3; 
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 75px 1fr 75px;
+  grid-row-gap: 10px;
+}
+
+.grid {
+  align-self: center;
+  justify-self: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 3px solid black;
+}
+
+html {
+  font-size: 32px;
+  font-family: glacial;
+}
+
+button {
+  background-color: #FFDBE9;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+#download-btn {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: black;
+}
+
+button.left {
+  opacity: 0.4; 
+}
+
+.left-arrow {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  display: inline-block;
+}

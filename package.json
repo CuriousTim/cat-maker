@@ -1,0 +1,25 @@
+{
+  "name": "cat-maker",
+  "version": "0.0.1",
+  "description": "An application to create customizable cat images.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server ./build -p 8080 -gb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CuriousTim/cat-maker.git"
+  },
+  "author": "Justin Lim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CuriousTim/cat-maker/issues"
+  },
+  "homepage": "https://github.com/CuriousTim/cat-maker#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "http-server": "^0.12.3"
+  }
+}
