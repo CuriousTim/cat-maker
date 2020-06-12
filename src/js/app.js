@@ -11,7 +11,7 @@ const CFACE = 5;
 // ids of the canvas elements 
 const LAYER_IDS = ["cbg", "cear", "ctail", "cleg", "cbody", "cface"];
 
-const IPATH = "images/";
+const IPATH = "/images/";
 
 const IMG_SUB_DIRS = [
   "background/",
@@ -153,6 +153,17 @@ function resize() {
     c.canvas.width = stage.clientWidth;
     c.canvas.height = c.canvas.width * 0.75;
     // Resizing image clears canvas
-    c.context.drawImage(c.img, 0, 0);
+    c.context.drawImage(c.img, 0, 0, c.canvas.width, c.canvas.height);
+  }
+}
+
+/**
+ * Load web worker to preload images.
+ */
+const ImageLoaderWorker = new Worker('/js/imageLoader.min.js');
+for (let c of canvases) {
+  // The first image of each layer is already loaded.
+  for (let i = 1; i < c.imgNames.length; i++) {
+    ImageLoaderWorker.postMessage(c.imgPath + c.imgNames[i]);
   }
 }
