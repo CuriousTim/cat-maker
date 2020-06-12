@@ -142,3 +142,17 @@ function mergeCanvases() {
   bgLayer.context.drawImage(bgLayer.img, 0, 0);
 }
 document.getElementById("download").onclick = () => {mergeCanvases()};
+
+/**
+ * Resize canvas on window resize
+ */
+window.addEventListener('resize', resize, false);
+function resize() {
+  let stage = document.getElementById("stage");
+  for (let c of canvases) {
+    c.canvas.width = stage.clientWidth;
+    c.canvas.height = c.canvas.width * 0.75;
+    // Resizing image clears canvas
+    c.context.drawImage(c.img, 0, 0);
+  }
+}

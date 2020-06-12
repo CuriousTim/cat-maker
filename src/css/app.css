@@ -16,10 +16,11 @@ header {
   grid-row: 1;
 }
 
-.stage {
+#stage {
   grid-column: 2;
   grid-row: 2;
   position: relative;
+  max-width: 100%;
 }
 
 .controls {
@@ -46,9 +47,13 @@ canvas {
   border: 3px solid black;
 }
 
-html {
-  font-size: 32px;
+html, body {
+  font-size: 1.5rem;
   font-family: glacial;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
 }
 
 button {

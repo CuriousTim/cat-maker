@@ -4,16 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
-  <link href="/css/app.css" rel="stylesheet" type="text/css">
-  <script src="/js/app.js" async></script>
+  <link href="/css/app.min.css" rel="stylesheet" type="text/css">
+  <script src="/js/app.min.js" async></script>
   <title>Cat Maker</title>
 </head>
 <body class="wrapper" style="background-color: #8CABBE">
   <header class="grid">
     <h1>The Official Cat Creator</h1>
   </header>
-  <div class="stage">
-    <canvas id="cbg" height="600" width="800" style="z-index: 0"></canvas>
+  <div id="stage">
+    <canvas id="cbg" height="600" width="800" style="z-index: 0">
+      Your browser does not support canvas.
+    </canvas>
     <canvas id="cear" height="600" width="800" style="z-index: 1"></canvas>
     <canvas id="ctail" height="600" width="800" style="z-index: 2"></canvas>
     <canvas id="cleg" height="600" width="800" style="z-index: 3"></canvas>
