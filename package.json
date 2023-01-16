@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/CuriousTim/cat-maker#readme",
   "devDependencies": {
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.1.14",
     "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-postcss": "^8.0.0",
